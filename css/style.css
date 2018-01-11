@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Rock+Salt|Permanent+Marker|Audiowide|Lobster|Monoton|Mrs+Sheppards|Press+Start+2P|Sniglet:400,800|Dancing+Script|Sacramento|Great+Vibes|Homemade+Apple|Lobster+Two|Oleo+Script");
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/earlyaccess/hannari.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
+@import url(https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css.css);
+* {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.input-container {
+  height: 40px;
+  padding: 8px;
+  vertical-align: middle;
+}
+.input-container > input, .input-container select {
+  font-size: 20px;
+  height: 100%;
+}
+.input-container .size {
+  width: 60px;
+}
+.input-container > * {
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+.img-container {
+  display: inline-block;
+}
+.img-container canvas {
+  display: none;
+}
+.img-container img {
+  background: #222;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Dj Name</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <html ng-app="myApp">
+<body>
+  <div ng-controller="myCtrl" style="text-align:center">
+    <div class="input-container">
+      <select ng-model="font" style="font-family:{{font}}; height:100%">
+        <option value="{{item.name}}" ng-repeat="item in fontList">{{item.name}}</option>
+      </select>
+      <input type="checkbox" id="bold" name="bold" ng-model="bold" style="height:16px"/>
+      <label for="bold">太く</label>
+      <input type="checkbox" id="italic" name="italic" ng-model="italic" style="height:16px"/>
+      <label for="italic">ななめ</label>
+      <input class="size" type="number" name="size" ng-model="size">
+      <input ng-model="name">
+      
+      <input class="size" type="text" name="cw" ng-model="cw">
+      *
+      <input class="size" type="text" name="ch" ng-model="ch">
+      <input type="checkbox" id="bg" name="bg" ng-model="bg"  style="height:16px"/>
+      <label for="bg">背景透過</label>
+    </div>
+    <div class="img-container">
+      <canvas id="cv"width="800"height="600"></canvas>
+      <img id="newImg" style="border:solid 1px #000">
+    </div>
+  </div>
+</body>
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
